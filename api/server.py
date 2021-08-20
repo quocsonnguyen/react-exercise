@@ -7,8 +7,8 @@ import smtplib
 app = Flask(__name__)
 cors = CORS(app, resources={r"/api/*": {"origins": "*"}})
 
-gmail_user = 'quocsonnguyen2010.study@gmail.com'
-gmail_password = 'anhton123'
+gmail_user = ''
+gmail_password = ''
 
 @app.route('/api/send_email', methods=['POST', 'GET'])
 @cross_origin()
